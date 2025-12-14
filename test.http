@@ -1,0 +1,38 @@
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+    "name" : "thanh",
+    "email" : "123@gmail.com"
+}
+
+###
+POST http://localhost:3001/api/school/students
+Content-Type: application/json
+
+{ 
+    "name": "Nguyen Van A", 
+    "email": "a@gmail.com" 
+}
+
+###
+POST http://localhost:3001/api/school/courses
+Content-Type: application/json
+
+{ 
+    "title": "NodeJS Advanced",
+    "code": "NODE01" 
+}   
+
+###
+POST http://localhost:3001/api/school/enroll
+Content-Type: application/json
+
+{ 
+    "studentId": 1,
+    "courseId": 1 
+}
+
+###
+DELETE  http://localhost:3001/api/school/courses/3
+Content-Type: application/json
